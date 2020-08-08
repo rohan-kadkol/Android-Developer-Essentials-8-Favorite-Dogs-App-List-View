@@ -6,6 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <!--TODO (1): Add a ListView-->
+    <!--TODO (2): Give it an id of lv_dogs-->
+    <!--TODO (3): Height & Width = match_parent-->
     <ListView
         android:id="@+id/lv_dogs"
         android:layout_width="match_parent"

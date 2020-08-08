@@ -8,6 +8,7 @@ import android.widget.ImageView;
 import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
+    // TODO (4): Create a global variable for the ListView
     private ListView mLvDogs;
 
     @Override
@@ -15,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // TODO (5): use findViewById to initialize the above global variable
         mLvDogs = findViewById(R.id.lv_dogs);
     }
 }
