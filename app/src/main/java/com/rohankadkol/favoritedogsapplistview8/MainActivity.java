@@ -2,10 +2,13 @@ package com.rohankadkol.favoritedogsapplistview8;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.ImageView;
 import android.widget.ListView;
 
 import com.rohankadkol.favoritedogsapplistview8.adapters.DogsListAdapter;
+import com.squareup.picasso.Picasso;
 
 public class MainActivity extends AppCompatActivity {
     private ListView mLvDogs;

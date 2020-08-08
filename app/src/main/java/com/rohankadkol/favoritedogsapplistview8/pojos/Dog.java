@@ -6,13 +6,15 @@ public class Dog {
     private double age;
     private String likes;
     private String dislikes;
+    private String imageUrl;
 
-    public Dog(String name, String breed, double age, String likes, String dislikes) {
+    public Dog(String name, String breed, double age, String likes, String dislikes, String imageUrl) {
         this.name = name;
         this.breed = breed;
         this.age = age;
         this.likes = likes;
         this.dislikes = dislikes;
+        this.imageUrl = imageUrl;
     }
 
     public String getName() {
@@ -53,5 +55,13 @@ public class Dog {
 
     public void setDislikes(String dislikes) {
         this.dislikes = dislikes;
+    }
+
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
     }
 }
