@@ -17,4 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
         mLvDogs = findViewById(R.id.lv_dogs);
     }
+
+    // TODO (1): Add a package called adapters
+    // TODO (2): Create a class called DogsAdapter
 }
