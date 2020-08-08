@@ -72,6 +72,8 @@ public class DogsListAdapter extends ArrayAdapter<Dog> {
         tvName.setText(mDogs[position].getName());
         tvBreed.setText(mDogs[position].getBreed());
 
+        // TODO (5): Before returning the view, set an OnClickListener that called the DetailsActivity with the required extras in the intent
+
         return view;
     }
 
