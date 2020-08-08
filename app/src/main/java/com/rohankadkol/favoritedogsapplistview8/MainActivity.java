@@ -8,7 +8,6 @@ import android.widget.ImageView;
 import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
-    // TODO (4): Create a global variable for the ListView
     private ListView mLvDogs;
 
     @Override
@@ -16,7 +15,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // TODO (5): use findViewById to initialize the above global variable
         mLvDogs = findViewById(R.id.lv_dogs);
     }
+
+    // TODO (1): Create a new package called pojos.
+    // TODO (2): Create a new class within pojos called Dog.
+    // TODO (3): Dog must have the following fields: name, breed, likes, dislikes, imageUrl.
+    // TODO (4): Add the getters, setters, and also a constructor.
 }
