@@ -18,12 +18,11 @@ public class MainActivity extends AppCompatActivity {
         mLvDogs = findViewById(R.id.lv_dogs);
     }
 
-    // TODO (1): Add a package called adapters
-    // TODO (2): Create a class called DogsAdapter
-    // TODO (3): Create two global variables. Context mContext and Dog[] mDogs
-    // TODO (4): Create a constructor to save the passed context to a global Context variable called mContext
-    // TODO (5): Override getView()
-    // TODO (6): Configure getView() to return the view populated with the correct dog information
-    // TODO (7): Override getCount()
-    // TODO (8): Configure getCount() to return mDogs.length
+    // TODO (1): Add a new activity called DetailsActivity
+    // TODO (2): In the activity_details.xml file, have a root LinearLayout with vertical orientation
+    // TODO (3): Have an ImageView (iv_dog) with weight 4 and a ScrollView with weight 6
+    // TODO (4): Within the ScrollView, add a vertical LinearLayout
+    // TODO (5): Then add 6 TextViews in the following order: Name, Breed, Likes Label, Likes, Dislikes Label, Dislikes
+    // TODO (6): Then add 6 TextViews in the following order: Name, Breed, Likes Label, Likes, Dislikes Label, Dislikes
+
 }
