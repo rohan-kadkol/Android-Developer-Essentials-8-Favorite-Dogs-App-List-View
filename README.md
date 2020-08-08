@@ -18,7 +18,7 @@ Hence, we're first learning ListViews followed by RecyclerViews in the next week
 
 ### Screenshots
 <br>
-<img src="assets/images/screenshot.mp4" height="850">
+<img src="assets/images/screenshot.gif" height="850">
 
 <br>
 <br>
