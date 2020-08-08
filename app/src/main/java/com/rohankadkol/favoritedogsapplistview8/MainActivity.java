@@ -17,9 +17,4 @@ public class MainActivity extends AppCompatActivity {
 
         mLvDogs = findViewById(R.id.lv_dogs);
     }
-
-    // TODO (1): Create a new package called pojos.
-    // TODO (2): Create a new class within pojos called Dog.
-    // TODO (3): Dog must have the following fields: name, breed, likes, dislikes, imageUrl.
-    // TODO (4): Add the getters, setters, and also a constructor.
 }
