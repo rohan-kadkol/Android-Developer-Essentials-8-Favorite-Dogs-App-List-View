@@ -1,5 +1,6 @@
 package com.rohankadkol.favoritedogsapplistview8;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -39,6 +40,9 @@ public class DetailsActivity extends AppCompatActivity {
     private void setupActionBar() {
         // TODO (1): Change the title to the dog's name
         // TODO (2): Show the backbutton on the actionBar
+        setTitle(getIntent().getStringExtra("dog_name"));
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
     }
 
     private void populateUi() {
