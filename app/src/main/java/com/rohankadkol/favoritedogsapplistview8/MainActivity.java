@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.ListView;
 
+import com.rohankadkol.favoritedogsapplistview8.adapters.DogsListAdapter;
+
 public class MainActivity extends AppCompatActivity {
     private ListView mLvDogs;
 
@@ -16,5 +18,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         mLvDogs = findViewById(R.id.lv_dogs);
+
+        DogsListAdapter adapter = new DogsListAdapter(this, 0);
+        mLvDogs.setAdapter(adapter);
     }
 }

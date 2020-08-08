@@ -10,7 +10,6 @@ import android.widget.TextView;
 import com.squareup.picasso.Picasso;
 
 public class DetailsActivity extends AppCompatActivity {
-    // TODO (1): Add 5 variables for tv_name, tv_breed, tv_likes, tv_dislikes and iv_dog
     ImageView mIvDog;
     TextView mTvName;
     TextView mTvBreed;
@@ -24,14 +23,12 @@ public class DetailsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_details);
 
-        // TODO (2): Initialize the variables using findViewById
         mIvDog = findViewById(R.id.iv_dog);
         mTvName = findViewById(R.id.tv_name);
         mTvBreed = findViewById(R.id.tv_breed);
         mTvLikes = findViewById(R.id.tv_likes);
         mTvDislikes = findViewById(R.id.tv_dislikes);
 
-        // TODO (3): If getIntent() != null, call populateUi()
         mIntent = getIntent();
         if (mIntent != null) {
             setupActionBar();
@@ -40,11 +37,11 @@ public class DetailsActivity extends AppCompatActivity {
     }
 
     private void setupActionBar() {
-
+        // TODO (1): Change the title to the dog's name
+        // TODO (2): Show the backbutton on the actionBar
     }
 
     private void populateUi() {
-        // TODO (4): Populate the 5 variables with the extras from the passed intent
         String name = getIntent().getStringExtra("dog_name");
         String breed = getIntent().getStringExtra("dog_breed");
         String likes = getIntent().getStringExtra("dog_likes");
