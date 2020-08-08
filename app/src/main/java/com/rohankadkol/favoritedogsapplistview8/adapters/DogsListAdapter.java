@@ -13,6 +13,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import com.rohankadkol.favoritedogsapplistview8.DetailsActivity;
 import com.rohankadkol.favoritedogsapplistview8.R;
 import com.rohankadkol.favoritedogsapplistview8.pojos.Dog;
 import com.squareup.picasso.Picasso;
@@ -73,6 +74,19 @@ public class DogsListAdapter extends ArrayAdapter<Dog> {
         tvBreed.setText(mDogs[position].getBreed());
 
         // TODO (5): Before returning the view, set an OnClickListener that called the DetailsActivity with the required extras in the intent
+        view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(mContext, DetailsActivity.class);
+                intent.putExtra("dog_name", mDogs[position].getName());
+                intent.putExtra("dog_breed", mDogs[position].getBreed());
+                intent.putExtra("dog_likes", mDogs[position].getLikes());
+                intent.putExtra("dog_dislikes", mDogs[position].getDislikes());
+                intent.putExtra("dog_image_url", mDogs[position].getImageUrl());
+
+                mContext.startActivity(intent);
+            }
+        });
 
         return view;
     }
