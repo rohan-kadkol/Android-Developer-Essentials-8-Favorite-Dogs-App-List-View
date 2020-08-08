@@ -1,21 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--TODO (6): Convert to LinearLayout of horizontal orientation-->
-<!--TODO (7): Width = match_parent-->
-<!--TODO (8): Height = wrap_content-->
-<!--TODO (9): Add 16dp of padding to the start and end-->
-<!--TODO (10): Add 16dp of padding to the top and bottom-->
-
-<!--Within the Linear Layout-->
-<!--TODO (11): Add an ImageView with id = iv_dog-->
-<!--TODO (12): Width = 0dp-->
-<!--TODO (13): Weight = 3-->
-<!--TODO (14): Height = match_parent-->
-<!--TODO (15): Background = primary_light-->
-<!--TODO (16): tools:src = dog_placeholder-->
-
-<!--TODO (17): Create another LinearLayout of vertical orientation-->
-<!--TODO (18): Add two TextViews. One for the name (tv_name) and one for the breed (tv_breed)-->
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
